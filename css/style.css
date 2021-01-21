@@ -271,6 +271,8 @@ section .title::after{
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
+   
+    height: 39vh;
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -299,6 +301,12 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+.sub-title a{
+    color: black;
+}
+.sub-title a:hover{
+    color: rgb(7, 7, 197);
 }
 
 
@@ -335,6 +343,7 @@ section .title::after{
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
+    
 }
 .skills .skills-content .right .info{
     display: flex;
@@ -347,8 +356,9 @@ section .title::after{
     font-size: 18px;
 }
 .skills .skills-content .right .line{
-    height: 5px;
+    height: 10px;
     width: 100%;
+    border-radius: 10px;
     background: lightgrey;
     position: relative;
 }
@@ -356,6 +366,7 @@ section .title::after{
     content: "";
     position: absolute;
     height: 100%;
+    border-radius: 10px;
     left: 0;
     top: 0;
     background: rgb(203, 20, 220);
@@ -364,6 +375,9 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .css::before{
+    width: 90%;
+}
+.skills-content .right .bootstrap::before{
     width: 90%;
 }
 .skills-content .right .js::before{
@@ -378,10 +392,12 @@ section .title::after{
 .skills-content .right .angular::before{
     width: 80%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right .postgresql::before{
     width: 90%;
 }
-
+.progress-done{
+    transition: 1s ease;
+}
 
 
 .projects p a{
